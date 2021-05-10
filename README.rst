@@ -49,6 +49,10 @@
 
 .. code:: bash
 
+    $ bin/fabrest test fabrest.polls
+
+.. code:: bash
+
     $ bin/fabrest migrate
     $ bin/fabrest createsuperuserwithpassword --username=admin --password=admin --email=admin@example.org
     $ bin/fabrest loaddata fixtures.yaml
