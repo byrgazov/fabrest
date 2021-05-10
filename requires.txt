@@ -1,0 +1,10 @@
+setuptools
+
+django
+django-currentuser
+django-dirtyfields
+django-filter
+djangorestframework
+django-createsuperuserwithpassword
+
+funcy

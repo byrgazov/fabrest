@@ -1,0 +1,115 @@
+- model: polls.Polling
+  pk: 1
+  fields:
+    title      : First polling
+    description: First polling description.
+    created_by : 1
+    updated_by : null
+    start_time : 2021-05-01 00:00Z
+    duration   : 31 days
+
+- model: polls.Polling
+  pk: 2
+  fields:
+    title      : Second polling
+    description: Second polling description.
+    created_by : 1
+    updated_by : null
+    start_time : 2021-05-10 00:00Z
+    duration   : 10 days
+
+- model: polls.Question
+  pk: 1
+  fields:
+    polling: 1
+    order  : 10
+    description: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquam euismod libero.
+      Pellentesque efficitur eleifend mauris, vitae venenatis quam laoreet.
+
+- model: polls.Question
+  pk: 2
+  fields:
+    polling: 1
+    order  : 20
+    description: |
+      Morbi sed lacus elit. Quisque non erat sit amet magna volutpat scelerisque.
+      Proin ut diam venenatis, scelerisque orci et, finibus.
+
+- model: polls.Question
+  pk: 3
+  fields:
+    polling: 1
+    order  : 30
+    description: |
+      Aenean sed sapien in lorem rutrum consequat in id felis. Nunc blandit, nisl vel ultricies ullamcorper,
+      ligula nulla ultrices nisl, et maximus ex sem at.
+
+- model: polls.Question
+  pk: 4
+  fields:
+    polling: 1
+    order  : 40
+    description: |
+      Donec sed leo quis neque consectetur commodo et et ante. Morbi nec lorem ac magna pulvinar malesuada.
+      Curabitur convallis ex.
+
+- model: polls.TextQuestion
+  pk: 1
+  fields: {}
+
+- model: polls.TextQuestion
+  pk: 2
+  fields: {}
+
+- model: polls.ChoiceQuestion
+  pk: 3
+  fields:
+    multiple: true
+
+- model: polls.ChoiceQuestion
+  pk: 4
+  fields:
+    multiple: false
+
+- model: polls.ChoiceOption
+  pk: 31
+  fields:
+    question: 3
+    text    : Quisque eu augue sit amet sem pretium volutpat at at libero.
+
+- model: polls.ChoiceOption
+  pk: 32
+  fields:
+    question: 3
+    text    : Fusce vitae risus et tellus sollicitudin sollicitudin non eu turpis.
+
+- model: polls.ChoiceOption
+  pk: 33
+  fields:
+    question: 3
+    text    : Nunc in odio cursus, dictum massa vitae, ultricies turpis.
+
+- model: polls.ChoiceOption
+  pk: 34
+  fields:
+    question: 3
+    text    : Suspendisse mollis mauris vitae risus convallis, in vehicula orci ultrices.
+
+- model: polls.ChoiceOption
+  pk: 41
+  fields:
+    question: 4
+    text    : Maecenas tincidunt lorem et orci egestas ornare.
+
+- model: polls.ChoiceOption
+  pk: 42
+  fields:
+    question: 4
+    text    : Sed consequat massa a porttitor rutrum.
+
+- model: polls.ChoiceOption
+  pk: 43
+  fields:
+    question: 4
+    text    : Nunc vitae lacus tempus, semper urna ut, viverra est.
